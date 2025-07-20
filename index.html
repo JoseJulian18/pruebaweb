@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATFLIX - Cuentas de Streaming Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="gradient-bg py-4 px-6 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-400">
+                <span class="text-white">CATFLIX</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#services" class="hover:text-blue-400 transition">Servicios</a>
+                <a href="#features" class="hover:text-blue-400 transition">Ventajas</a>
+                
+                <a href="#contact" class="hover:text-blue-400 transition">Contacto</a>
+            </div>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Acceso Premium a Todas las Plataformas de Streaming
+                </h1>
+                <p class="text-xl mb-8 text-gray-300">
+                    Suscripciones legítimas a Netflix, HBO Max, Disney+, Prime Video y más. Ahorra hasta un 70% en tus servicios favoritos.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition duration-300">
+                        Ver Planes
+                    </a>
+                    <a href="#contact" class="border border-blue-400 text-blue-400 hover:bg-blue-900/30 px-8 py-3 rounded-lg font-medium transition duration-300">
+                        Contactar
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="C:\Users\HP\Downloads\CATFLIX\imagenes\vista.png" class="rounded-lg shadow-2xl" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Plataformas Disponibles</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Elige entre nuestras cuentas premium para las principales plataformas de streaming
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Netflix -->
+                <div class="service-card bg-gray-900 p-8 rounded-xl">
+                    <div class="mb-6">
+                        <img src="C:\Users\HP\Downloads\CATFLIX\imagenes\netflix.png" alt="Logo de Netflix en fondo negro con texto rojo" class="h-12 mx-auto" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Netflix Premium</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>4 pantallas simultáneas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Ultra HD 4K</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Acceso completo al catálogo</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold"></span>
+                        <span class="text-gray-400">/mes</span>
+                    </div>
+                    <button href="https://wa.me/+59163551198" class="w-full bg-red-700 hover:bg-red-800 py-3 rounded-lg font-medium transition">
+                        Comprar Ahora
+                    </button>
+                </div>
+
+                <!-- HBO Max -->
+                <div class="service-card bg-gray-900 p-8 rounded-xl">
+                    <div class="mb-6">
+                        <img src="C:\Users\HP\Downloads\CATFLIX\imagenes\hbo.jpg" alt="Logo de HBO Max en fondo negro con texto morado" class="h-12 mx-auto" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">HBO Max</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>3 pantallas simultáneas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>4K HDR</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Descargas offline</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold">$7.99</span>
+                        <span class="text-gray-400">/mes</span>
+                    </div>
+                    <button href="https://wa.me/+59163551198" class="w-full bg-purple-700 hover:bg-purple-800 py-3 rounded-lg font-medium transition">
+                        Comprar Ahora
+                    </button>
+                </div>
+
+                <!-- Disney+ -->
+                <div class="service-card bg-gray-900 p-8 rounded-xl">
+                    <div class="mb-6">
+                        <img src="C:\Users\HP\Downloads\CATFLIX\imagenes\disney.jpg" alt="Logo de Disney Plus en fondo negro con texto azul" class="h-12 mx-auto" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Disney+</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>4 perfiles simultáneos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>4K Ultra HD</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-green-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Contenido sin anuncios</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-6">
+                        <span class="text-3xl font-bold">$6.99</span>
+                        <span class="text-gray-400">/mes</span>
+                    </div>
+                    <button href="https://wa.me/+59163551198" class="w-full bg-blue-700 hover:bg-blue-800 py-3 rounded-lg font-medium transition">
+                        Comprar Ahora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Por Qué Elegirnos?</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Ofrecemos la mejor experiencia en cuentas de streaming premium
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-xl">
+                    <div class="w-14 h-14 bg-blue-900 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cuentas 100% Legítimas</h3>
+                    <p class="text-gray-300">
+                        Todas nuestras cuentas son suscripciones premium originales, no compartidas ni hackeadas.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl">
+                    <div class="w-14 h-14 bg-blue-900 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Activación Rápida</h3>
+                    <p class="text-gray-300">
+                        Recibirás el acceso a tu cuenta en menos de 15 minutos después del pago.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-xl">
+                    <div class="w-14 h-14 bg-blue-900 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Garantía de Reembolso</h3>
+                    <p class="text-gray-300">
+                        Si tienes cualquier problema, te ofrecemos garantía de 7 días para reembolsarte.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            
+                    
